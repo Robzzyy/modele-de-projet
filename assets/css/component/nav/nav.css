@@ -1,0 +1,7 @@
+.nav-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: var(--main-bkg);
+    text-align: center;
+  }

@@ -1,0 +1,126 @@
+/* Imports */
+/* Polices */
+
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+/* components */
+@import url("./component/header/header.css");
+@import url("./component/nav/nav.css");
+@import url("/assets/css/component/picker-banner-css/picker-banner.css");
+
+/*variables globales couleurs racines */
+:root {
+  --texte-principal: #000;
+  --texte-secondaire: #f2b409;
+  --texte-menu: #fff;
+  --lien-principal: #000;
+  --lien-secondaire: #1a1c23;
+  --body-background: #121212;
+  --header-background: #f9f9f9;
+  --light-gray-bkg: #f1f1f1;
+  --main-bkg: #fff;
+  --button-color: #ffb85f;
+  --content-width: 1400px;
+  /* --border-mockup: 1px solid #aaa; */
+}
+
+/*Styles globaux*/
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "liberation_sansbold", sans-serif;
+  font-size: 100%;
+  background: var(--body-background);
+  color: var(--texte-principal);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#app-container {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/*
+    Classe clearfix, permet de retablir l'afficache normal une fois
+    hors du conteneur qui possède des enfants flottés
+*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+    classe permettant d'empeche un élément d'être sélectionné
+*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/*
+    conteneur structurel
+    etablissant la zone de contenu
+*/
+.container-struct {
+  margin: 0;
+  padding: 0;
+  width: var(--content-width);
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+    conteneur en ligne largeur 100%
+*/
+.container-row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/*
+    conteneur colonne largeur 100%
+*/
+.container-col {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

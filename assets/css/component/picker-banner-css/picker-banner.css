@@ -1,0 +1,45 @@
+.picker-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picker-container {
+    margin: 10px;
+    padding: 10px;
+    background: rgba(3, 135, 34, 0.3);
+    width:700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.picker-from, .picker-to {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff88;
+}
+
+#from, #to {
+    margin:0;
+    padding: 8px 16px;
+    width: 250px;
+    background: transparent;
+    border:0;
+    font-size: 1.3rem;
+    color: green;
+}
+
+.triggerIcon {
+    padding: 10px;
+    background-color: #c2c2c288;
+    cursor: pointer;
+}

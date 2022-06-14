@@ -1,0 +1,81 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- inclusion google material icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    
+  <!-- inclusion jQuery UI 1.13 -->
+  <link rel="stylesheet" href="./assets/js/jquery-ui/">
+  <!-- inclusion de simple slider  -->
+
+  <link rel="stylesheet" href="/assets/css/component/simple-slider-min-css/simple-slider-min.css">
+
+  <!-- inclusion bootstrap 5.2 -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+  crossorigin="anonymous"> -->
+  
+  <!-- inclusion CSS de la page -->
+  <link rel="stylesheet" href="./assets/css/apps.css">
+</head>
+<body>
+<div id="app-container">
+  <div class="container-col">
+      <div class="container-struct">
+          <div class="picker-content">
+              <!-- datepickers -->
+              <div class="picker-container">
+                  <div class="picker-from">
+                      <input type="text" id="from">
+                      <span class="material-icons triggerIcon">
+                          date_range
+                      </span>
+                  </div>
+                  <div class="picker-to">
+                      <input type="text" id="to">
+                      <span class="material-icons triggerIcon">
+                          date_range
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-col">
+    <div class="container-struct">
+      <div class="simple-slider">
+          <h1>Simple Jquery slider</h1>
+          <div id="slider"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- inclusion jquery par CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+  crossorigin="anonymous"></script>
+
+  <!-- inclusion jQuery en local si CDN inop -->
+  <script>window.jQuery || document.write('<script src="./assets/js/jquery/jquery-3.6.0.min.js"><\/script>')</script>
+
+  <!-- inclusion de jquery ui 1.13 -->
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" 
+  integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" 
+  crossorigin="anonymous"></script>
+
+  <!-- inclusion Bootstrap 5.2 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+  crossorigin="anonymous"></script> -->
+
+  <!-- inclusion JS de la page -->
+  <script src="/assets/js/simple-slider-min.js"></script>
+  <script src="./assets/js/apps.js"></script>
+</body>
+</html>
